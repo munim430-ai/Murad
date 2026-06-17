@@ -1,0 +1,8 @@
+# compiled binaries
+osmedeus/osmedeus
+enumerepo/enumerepo
+sn0int/target/
+# python cache
+**/__pycache__/
+**/*.pyc
+*.egg-info/
