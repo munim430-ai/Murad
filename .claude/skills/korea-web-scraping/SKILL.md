@@ -78,3 +78,9 @@ Naver and Coupang in particular fingerprint aggressively and will serve a CAPTCH
 ## 6. Reference request template
 
 `scripts/fetch.py` in this skill has a working template (session reuse, encoding fallback, throttling, robots.txt check) — read it and adapt rather than writing the boilerplate from scratch each time.
+
+## 7. Delivering structured research (OSINT / business-intelligence asks)
+
+When the task is "find the people/contact info/org structure for these Korean companies" rather than a one-off page fetch, don't freelance the output shape — `references/output-format.md` documents a three-file deliverable (`<topic>.csv` + `<topic>.json` + `research_log.csv`) with a fixed schema, confidence levels, and an explicit log of anything declined and why. Read it before compiling the deliverable.
+
+That reference also covers the recurring judgment call in these tasks: a brief asking for "human-like pacing to avoid IP/account-block triggers" against LinkedIn (or similar) is asking for anti-bot-detection evasion, not just data collection, even when the underlying data is public and professional — decline that specific part, say so in the output, and fall back to official sites, business registries, and public search-engine indexing for the same cross-references.
